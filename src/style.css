@@ -8,6 +8,7 @@
 
 body{
     background-color: #232323;
+    overflow-x: hidden;
 }
 
 .navbar{
@@ -57,45 +58,42 @@ body{
 .navbar-brand{
     width: 50px;
 }
-.title-hero{
-    font-family: 'Kanit', sans-serif;
-    color: #FFE816;
-    text-transform: uppercase;
-    font-size: 10rem;
-    margin-top: -30px;
-}
-.bg-aw{
-    width: 2000px;
-    height: 350px;
+.img-fluid{
+    width: 1512px;
+    height: 546px;
     object-fit: cover;
-    border-radius: 10px;
-    margin-top: -20px;
     position: relative;
 }
-.link-social{
-    list-style: none;
+.new-song{
     position: absolute;
-    bottom: 40px;
-    right: 130px;
+    bottom: 100px;
+    margin-left: 2em;
 }
-.link-item a{
-    margin-right: 10px;
-    background-color: #2f2f2f;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
+.title-song{
+    font-family: 'Kanit',sans-serif;
+    font-size: 10rem;
+    text-transform: uppercase;
     color: #FFE816;
-    border-radius: 8px;
-    font-size: 25px;
 }
-@media screen and (max-width:768px){
+.artist{
+    color: #ffffff;
+    margin-top: -40px;
+    font-size: 40px;
+}
+.btn{
+    background-color: #FFE816;
+    font-weight: 700;
+    font-size: 22px;
+}
+.btn:hover{
+    background-color: #dbc500;
+}
+@media (max-width:768px){
     .container{
         margin: 10px 1.1rem;
     }
     .navbar-brand{
-        width: 50px;
+        width: 40px;
     }
     .toggler-icon {
         display: block;
@@ -142,12 +140,8 @@ body{
     .nav-item{
         margin: 10px 0px;
     }
-    .bg-aw{
-        width: 430px;
-        margin-top: -10px;
-    }
-    .title-hero{
-        font-size: 3.9rem;
-        margin-top: -15px;
+    .img-fluid{
+        height: 340px;
     }
 }
+
