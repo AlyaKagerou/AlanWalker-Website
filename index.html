@@ -12,48 +12,90 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top p-1">
-        <div class="container">
-          <img src="src/img/Logo_AW.png" class="d-lg-none navbar-brand">
-          <button class="navbar-toggler collapsed d-flex flex-column justify-content-around d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="toggler-icon top-bar"></span>
-            <span class="toggler-icon middle-bar"></span>
-            <span class="toggler-icon bottom-bar"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto justify-content-center align-items-center">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <img src="src/img/Logo_AW.png" class="d-lg-block d-none navbar-brand">
-              <li class="nav-item">
-                <a class="nav-link">Release</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Store</a>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar fixed-top navbar-expand-lg p-1" style="background-color: #232323;">
+      <div class="container">
+        <img src="src/img/Logo_AW.png" class="navbar-brand d-lg-none">
+        <button class="navbar-toggler collapsed d-flex flex-column justify-content-around d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <img src="src/img/Logo_AW.png" class="navbar-brand d-lg-block d-none">
+            <li class="nav-item">
+              <a class="nav-link">Release</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Store</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
     <!-- navbar -->
 
     <!-- hero -->
     <section class="hero">
-      <img src="src/img/aw2.jpg" class="img-fluid">
-      <div class="new-song">
-        <h1 class="title-song">ritual</h1>
-        <p class="artist">Alan Walker</p>
-        <a href="#" class="btn">Listen Now</a>
+      <div class="banner-image w-100 vh-100 d-flex img-fluid">
+        <div class="content container">
+          <h1 class="text-song">ritual</h1>
+          <p class="text-artist">Out Now!</p>
+          <a href="#" class="btn-listen">Listen Here</a>
+        </div>
       </div>
-      <ul class="link">
-        <li class="link-items"><a href="#"></a></li>
-      </ul>
     </section>
     <!-- hero -->
+
+    <!-- about -->
+    <section class="about">
+      <div class="container-about">
+        <h1 class="title-about">About</h1>
+        <div class="row">
+          <div class="col-lg-6">
+            <p class="content-about">Alan Walker (August 24, 1997) DJ and producer. He was born in Northampton, England. He lived in Bergen, Norway because at the age of two his parents moved there for work reasons. His interest in music began when he met and closely followed the careers of producers like K-391 and Ahrix, Alan spent hours watching videos of them on YouTube, and also closely followed composers Steve Jablonsky and Hans Zimmer. Thus, Walker began to create his own music from his laptop. He began composing under the pseudonym DJ Walkzz.</p>
+            <p class="content-about">His most popular composition in his beginnings was titled Fade (2014) its virtual launch was due to an error by Walker who uploaded it by mistake, but what he did not know is that it would be popular quickly with the public and the record label NoCopyrightSounds (NCS ) with whom he had signed a contract. NoCopyrightSounds launched Faded on its YouTube channel in late 2014. It was very successful and had over 300 million views.</p>
+          </div>
+          <div class="col-lg-6">
+            <img src="src/img/about.png" class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about -->
+
+    <!-- footer -->
+    <footer class="fixed-bottom">
+      <div class="container">
+        <ul class="link d-flex justify-content-center align-items-center">
+          <li class="link-items"><a href="#"><i class='bx bxl-youtube'></i></a></li>
+          <li class="link-items"><a href="#"><i class='bx bxl-twitter'></i></a></li>
+          <li class="link-items"><a href="#"><i class='bx bxl-facebook'></i></a></li>
+          <li class="link-items"><a href="#"><i class='bx bxl-instagram'></i></a></li>
+          <li class="link-items"><a href="#"><i class='bx bxl-tiktok'></i></a></li>
+          <li class="link-items"><a href="#"><i class='bx bxl-spotify'></i></a></li>
+          <li class="link-items"><a href="#"><i class='bx bxl-deezer'></i></a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add('bg-dark', 'shadow');
+        } else {
+          nav.classList.remove('bg-dark', 'shadow');
+        }
+      });
+    </script>
 </body>
 </html>

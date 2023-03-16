@@ -5,23 +5,25 @@
     box-sizing: border-box;
     font-family: 'Titillium Web', sans-serif;
 }
-
 body{
     background-color: #232323;
     overflow-x: hidden;
 }
-
-.navbar{
-    background-color: #232323;
+::-webkit-scrollbar{
+    background: #232323;
+    width: 6px;
 }
-
+::-webkit-scrollbar-thumb{
+    background-color: #FFE816;
+    width: 6px;
+    border-radius: 6px;
+}
 .navbar-toggler {
     width: 30px;
     height: 3px;
     position: relative;
     transition: .5s ease-in-out;
 }
-
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -30,21 +32,17 @@ body{
     box-shadow: none;
     border: 0;
 }
-
 .navbar-toggler span {
     margin: 0;
     padding: 0;
 }
-
 .toggler-icon {
     display: none;
 }
-
 .nav-item {
     margin: 14px 5rem;
     font-size: 23px;
 }
-
 .nav-item a {
     font-weight: 600;
     transition: 0.2s;
@@ -58,35 +56,71 @@ body{
 .navbar-brand{
     width: 50px;
 }
-.img-fluid{
-    width: 1512px;
-    height: 546px;
-    object-fit: cover;
+.banner-image {
+    background-image: url(img/aw2.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
-.new-song{
+.content{
     position: absolute;
-    bottom: 100px;
-    margin-left: 2em;
+    bottom: 120px;
 }
-.title-song{
-    font-family: 'Kanit',sans-serif;
-    font-size: 10rem;
-    text-transform: uppercase;
+.text-song{
     color: #FFE816;
+    text-transform: uppercase;
+    font-family: 'Kanit',sans-serif;
+    letter-spacing: 2px;
+    font-size: 5rem;
 }
-.artist{
+.text-artist{
     color: #ffffff;
-    margin-top: -40px;
-    font-size: 40px;
+    font-size: 20px;
+    margin: -20px 0px 30px;
 }
-.btn{
+.btn-listen{
     background-color: #FFE816;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #232323;
     font-weight: 700;
-    font-size: 22px;
 }
-.btn:hover{
-    background-color: #dbc500;
+.link{
+    margin-top: 20px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    list-style: none;
+}
+.link-items a{
+    color: #FFE816;
+    font-size: 24px;
+    display: flex;
+    text-decoration: none;
+    background-color: #232323;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+    margin-right: 9px;
+    border-radius: 5px;
+}
+.title-about{
+    color: #FFE816;
+    margin-top: 3rem;
+    font-family: 'Kanit',sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 5rem;
+}
+.container-about{
+    margin: 5rem;
+}
+.content-about{
+    text-align: justify;
+    color: #ffffff;
+    font-size: 21px;
 }
 @media (max-width:768px){
     .container{
@@ -140,8 +174,14 @@ body{
     .nav-item{
         margin: 10px 0px;
     }
-    .img-fluid{
-        height: 340px;
+    .row{
+        flex-wrap: wrap-reverse;
+    }
+    .container-about{
+        margin: 0 20px;
+    }
+    .content-about{
+        margin-top: 10px;
+        font-size: 16px;
     }
 }
-
