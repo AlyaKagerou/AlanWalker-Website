@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="icon" href="src/img/Logo_AW.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="src/style.css">
     <title>Alan Walker Website</title>
@@ -70,6 +71,94 @@
     </section>
     <!-- about -->
 
+    <!-- release -->
+    <section class="release">
+      <div class="container-about">
+        <div class="a d-flex justify-content-between align-items-end">
+          <h1 class="title-about">Releases</h1>
+          <a href="#" class="view">View All</a>
+        </div>
+        <div class="row">
+          <div class="swiper single">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="src/img/walkerverse_pt2.png" class="card-img-top" alt="single1">
+                  <div class="card-body">
+                    <h5 class="card-title">Walkerverse Pt.2</h5>
+                    <p class="card-text">Alan Walker</p>
+                    <a href="#" class="btn-listen2">Listen now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="src/img/lovesick.jpg" class="card-img-top" alt="single2">
+                  <div class="card-body">
+                    <h5 class="card-title">lovesick</h5>
+                    <p class="card-text">Alan Walker, Sophie Simmons</p>
+                    <a href="#" class="btn-listen2">Listen now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="src/img/Extremes.jpg" class="card-img-top" alt="single3">
+                  <div class="card-body">
+                    <h5 class="card-title">Extremes</h5>
+                    <p class="card-text">Alan Walker, Trevor Daniel</p>
+                    <a href="#" class="btn-listen2">Listen now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="src/img/origins.png" class="card-img-top" alt="single4">
+                  <div class="card-body">
+                    <h5 class="card-title">Origins</h5>
+                    <p class="card-text">Alan Walker</p>
+                    <a href="#" class="btn-listen2">Listen now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="src/img/walkerverse_pt1.png" class="card-img-top" alt="single5">
+                  <div class="card-body">
+                    <h5 class="card-title">Walkerverse Pt.1</h5>
+                    <p class="card-text">Alan Walker</p>
+                    <a href="#" class="btn-listen2">Listen now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="src/img/unity.png" class="card-img-top" alt="single6">
+                  <div class="card-body">
+                    <h5 class="card-title">Unity</h5>
+                    <p class="card-text">Alan Walker X Walkers</p>
+                    <a href="#" class="btn-listen2">Listen now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- release -->
+
+    <!-- store -->
+    <section class="store">
+      <div class="container-about">
+        <div class="a d-flex justify-content-between align-items-end">
+          <h1 class="title-about">Store</h1>
+          <p class="view">View All</p>
+        </div>
+      </div>
+    </section>
+    <!-- store -->
+
     <!-- footer -->
     <footer class="fixed-bottom">
       <div class="container">
@@ -85,6 +174,7 @@
       </div>
     </footer>
     <!-- footer -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script type="text/javascript">
       var nav = document.querySelector('nav');
@@ -96,6 +186,29 @@
           nav.classList.remove('bg-dark', 'shadow');
         }
       });
+
+      var swiper = new Swiper(".single", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+      },
+    });
     </script>
 </body>
 </html>

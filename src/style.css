@@ -99,7 +99,7 @@ body{
     font-size: 24px;
     display: flex;
     text-decoration: none;
-    background-color: #232323;
+    background-color: #131313;
     justify-content: center;
     padding: 5px;
     align-items: center;
@@ -121,6 +121,36 @@ body{
     text-align: justify;
     color: #ffffff;
     font-size: 21px;
+}
+.card{
+    background-color: #131313;
+    width: 280px;
+}
+.card-title{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.card-text{
+    color: #ffffff;
+    line-height: 10px;
+    margin-bottom: 2rem;
+}
+.btn-listen2{
+    background-color: #FFE816;
+    text-decoration: none;
+    padding: 7px 14px;
+    border-radius: 5px;
+    color: #232323;
+    font-weight: 700;
+}
+.btn-listen2:hover{
+    background-color: #dfc800;
+}
+.view{
+    color: #FFE816;
+    font-size: 15px;
+    text-decoration: none;
+    margin-bottom: 20px;
 }
 @media (max-width:768px){
     .container{
