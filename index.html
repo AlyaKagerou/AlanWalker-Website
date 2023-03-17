@@ -149,11 +149,57 @@
     <!-- release -->
 
     <!-- store -->
-    <section class="store">
+    <section class="release">
       <div class="container-about">
         <div class="a d-flex justify-content-between align-items-end">
           <h1 class="title-about">Store</h1>
-          <p class="view">View All</p>
+          <a href="#" class="view">View All</a>
+        </div>
+        <div class="row">
+          <div class="swiper store">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="src/img/hoodie.webp" class="card-img-top" alt="single1">
+                  <div class="card-body">
+                    <h5 class="card-title">Hoodie Yellow</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="src/img/Joggers.webp" class="card-img-top" alt="single2">
+                  <div class="card-body">
+                    <h5 class="card-title">Jogger Black</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="src/img/LongSleeve.webp" class="card-img-top" alt="single3">
+                  <div class="card-body">
+                    <h5 class="card-title">LongSleeve Black</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="src/img/LongSleeve.webp" class="card-img-top" alt="single3">
+                  <div class="card-body">
+                    <h5 class="card-title">LongSleeve Black</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="src/img/LongSleeve.webp" class="card-img-top" alt="single3">
+                  <div class="card-body">
+                    <h5 class="card-title">LongSleeve Black</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -188,6 +234,29 @@
       });
 
       var swiper = new Swiper(".single", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+      },
+    });
+
+      var swiper = new Swiper(".store", {
       slidesPerView: 1,
       spaceBetween: 10,
       pagination: {
