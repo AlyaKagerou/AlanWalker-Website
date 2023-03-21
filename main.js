@@ -6,9 +6,9 @@ var nav = document.querySelector('nav');
         } else {
           nav.classList.remove('bg-dark', 'shadow');
         }
-      });
+});
 
-      var swiper = new Swiper(".single", {
+var swiper = new Swiper(".single", {
       slidesPerView: 1,
       spaceBetween: 10,
       pagination: {
@@ -29,9 +29,9 @@ var nav = document.querySelector('nav');
           spaceBetween: 20,
         },
       },
-    });
+});
 
-      var swiper = new Swiper(".store", {
+var swiper = new Swiper(".store", {
       slidesPerView: 1,
       spaceBetween: 10,
       pagination: {
@@ -52,4 +52,4 @@ var nav = document.querySelector('nav');
           spaceBetween: 20,
         },
       },
-    });
+});
