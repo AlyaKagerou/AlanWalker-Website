@@ -19,6 +19,9 @@ body{
     width: 6px;
     border-radius: 6px;
 }
+.navbar{
+    background-color: #232323;
+}
 .navbar-toggler {
     width: 30px;
     height: 3px;
@@ -56,6 +59,11 @@ body{
 }
 .navbar-brand{
     width: 50px;
+}
+.title{
+    color: #FFE816;
+    margin-top: 7rem;
+    text-transform: uppercase;
 }
 @media (max-width:768px){
     .container{
