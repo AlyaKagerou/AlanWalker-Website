@@ -64,9 +64,51 @@ body{
     color: #FFE816;
     margin-top: 7rem;
     text-transform: uppercase;
+    font-weight: 700;
+}
+.container-release{
+    margin: 10px 3rem;
+}
+.nav-pills .nav-link.active{
+    background-color: #FFE816;
+    color: #232323;
+    font-weight: 700;
+}
+.nav-link{
+    color: #969696;
+    margin: 10px 10px 0px;
+}
+.nav-link:hover{
+    color: #FFE816;
+}
+.card{
+    background-color: #131313;
+    width: 280px;
+    height: 100%;
+}
+.card-title{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.card-text{
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+.btn-listen2{
+    background-color: #FFE816;
+    text-decoration: none;
+    padding: 7px 14px;
+    border-radius: 5px;
+    color: #232323;
+    font-weight: 700;
+}
+.btn-listen2:hover{
+    background-color: #232323;
+    color: #FFE816;
 }
 @media (max-width:768px){
-    .container{
+    .container-release{
         margin: 10px 1.1rem;
     }
     .navbar-brand{
