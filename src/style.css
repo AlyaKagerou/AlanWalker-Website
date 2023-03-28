@@ -135,6 +135,7 @@ body{
 .card-title{
     color: #ffffff;
     text-transform: uppercase;
+    font-weight: 700;
 }
 .card-text{
     color: #ffffff;
@@ -252,6 +253,13 @@ body{
     }
     .row{
         flex-wrap: wrap-reverse;
+    }
+    .card{
+        width: 14rem;
+        height: 100%;
+    }
+    .card-text{
+        line-height: 20px;
     }
     .container-about{
         margin: 0 20px;

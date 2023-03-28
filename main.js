@@ -9,7 +9,7 @@ var nav = document.querySelector('nav');
 });
 
 var swiper = new Swiper(".single", {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 10,
       pagination: {
         el: ".swiper-pagination",
@@ -32,7 +32,7 @@ var swiper = new Swiper(".single", {
 });
 
 var swiper = new Swiper(".store", {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 10,
       pagination: {
         el: ".swiper-pagination",
