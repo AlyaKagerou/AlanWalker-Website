@@ -192,6 +192,7 @@ body{
     background:linear-gradient(#FFE816 0 0) 0/0% no-repeat #131313;
     animation:p1 2s infinite linear;
     position: absolute;
+    border-radius: 50px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 500%);
@@ -267,5 +268,19 @@ body{
     .content-about{
         margin-top: 10px;
         font-size: 16px;
+    }
+    .progress-1{
+        width:320px;
+    }
+    .title-about{
+        font-size: 3rem;
+    }
+    .store-aw{
+        margin-bottom: 6rem;
+    }
+}
+@media (max-width:414px){
+    .card{
+        width: 11rem;
     }
 }
